@@ -17,7 +17,23 @@ class Homepage  extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: Text("MyHome")),
+      appBar: AppBar(title: Text("MyHome"),
+      actions: [
+        Icon( Icons.camera_alt),
+        SizedBox(width: 30,),
+        Icon(Icons.search),
+        PopupMenuButton(itemBuilder: (context){
+          return[
+            PopupMenuItem(child: Text("Settings")),
+            PopupMenuItem(child: Text("New Group")),
+            PopupMenuItem(child: Text("Payment")),
+            PopupMenuItem(child: Text("Newbroadcast")),
+            PopupMenuItem(child: Text("Settings")),
+          ];
+
+        })
+      ],
+      ),
       body:ListView(
 
           children:[
@@ -28,20 +44,37 @@ class Homepage  extends StatelessWidget {
            child: ListTile(
                 leading: Image.asset("assets/images/apple.jpg"),
               title: Text("Apple"),
-              subtitle: Row(
+              subtitle: Row(mainAxisSize: MainAxisSize.min,
                 children: [
-                  Text("\$200"),
+                  Icon(Icons.done_all,
+                  color: Colors.blueAccent,),
+                  Text("Hello"),
+
                 ],
               ),
-              trailing: Icon(Icons.shopping_cart),
+              trailing: Column(
+                children: [IconButton(
+                    onPressed: (){}, icon: Icon(Icons.shopping_cart)),
+                ]),
             ),
             ),
             Card(
+              color: Colors.lightGreen,
+           elevation: 5,
+           shadowColor: Colors.red,
            child: ListTile(
-              leading: Image.asset("assets/icons/banana3.png"),
-              title: Text("Banana"),
+              leading: CircleAvatar(backgroundImage: AssetImage("assets/icons/banana3.png")),
+              title: Text("Banana",style: GoogleFonts.aBeeZee(),
+              ),
               subtitle: Text("\$300"),
-              trailing: Icon(Icons.shopping_cart),
+              trailing:Column(mainAxisSize: MainAxisSize.min,
+                children: [
+                  Padding(padding: EdgeInsets.only(right: 8.0),
+                  child: Icon(Icons.favorite),
+                  ),
+                  Icon(Icons.shopping_cart),
+                ],
+    )
             ),
             ),
            Card(
