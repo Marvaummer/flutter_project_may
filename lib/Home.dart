@@ -19,6 +19,7 @@ class Homepage  extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(title: Text("MyHome"),
       actions: [
+
         Icon( Icons.camera_alt),
         SizedBox(width: 30,),
         Icon(Icons.search),

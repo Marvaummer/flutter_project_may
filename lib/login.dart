@@ -1,15 +1,23 @@
 //import 'package:flutter/cupertino.dart';
-//import 'dart:html';
 
 import 'package:flutter/material.dart';
-import 'package:flutter_project_may/registration.dart';
+//import 'package:flutter_project_may/registration.dart';
 import 'package:flutter_project_may/stateful%20register.dart';
 import 'Home.dart';
+
+void main(){
+  runApp(MaterialApp(
+  home: Loginpage(),
+debugShowCheckedModeBanner: false,
+  ));
+}
 
 class Loginpage extends StatelessWidget {
   // Loginpage({ super.key});
 String username="admin@123";
 String password="abc123";
+
+//for fetching
 
 final uname = TextEditingController();
 final pass = TextEditingController();
@@ -89,10 +97,6 @@ final pass = TextEditingController();
                builder: (context)=>Registerationpage()));
          },
              child:const Text("Not a user!!!!!Register Here..."))
-
-
-
-
        ],
      ),
    );
