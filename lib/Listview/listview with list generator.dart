@@ -8,34 +8,34 @@ void main(){
 
 
 class Listview2 extends StatelessWidget {
-
-var names = ["anu", "marvu", "sandru", "minnu", "nooru", "sahuu",
-  "tinuu", "hibuu", "gayu", "anu", "marvu", "sandru", "minnu", "nooru",
-  "sahuu", "tinuu", "hibuu", "gayu", "anu",
-  "marvu"];
-
-
-var images = ["assets/images/apple.jpg",
-"assets/images/banana.jpg",
-  "assets/images/grapes.jpg",
-  "assets/images/pineapple.jpg",
-  "assets/images/orange.jpg",
-  "assets/images/apple.jpg",
-  "assets/images/banana.jpg",
-  "assets/images/grapes.jpg",
-  "assets/images/pineapple.jpg",
-  "assets/images/orange.jpg",
-  "assets/images/apple.jpg",
-  "assets/images/banana.jpg",
-  "assets/images/grapes.jpg",
-  "assets/images/pineapple.jpg",
-  "assets/images/orange.jpg",
-  "assets/images/apple.jpg",
-  "assets/images/banana.jpg",
-  "assets/images/grapes.jpg",
-  "assets/images/pineapple.jpg",
-  "assets/images/orange.jpg"
-];
+//
+// var names = ["anu", "marvu", "sandru", "minnu", "nooru", "sahuu",
+//   "tinuu", "hibuu", "gayu", "anu", "marvu", "sandru", "minnu", "nooru",
+//   "sahuu", "tinuu", "hibuu", "gayu", "anu",
+//   "marvu"];
+//
+//
+// var images = ["assets/images/apple.jpg",
+// "assets/images/banana.jpg",
+//   "assets/images/grapes.jpg",
+//   "assets/images/pineapple.jpg",
+//   "assets/images/orange.jpg",
+//   "assets/images/apple.jpg",
+//   "assets/images/banana.jpg",
+//   "assets/images/grapes.jpg",
+//   "assets/images/pineapple.jpg",
+//   "assets/images/orange.jpg",
+//   "assets/images/apple.jpg",
+//   "assets/images/banana.jpg",
+//   "assets/images/grapes.jpg",
+//   "assets/images/pineapple.jpg",
+//   "assets/images/orange.jpg",
+//   "assets/images/apple.jpg",
+//   "assets/images/banana.jpg",
+//   "assets/images/grapes.jpg",
+//   "assets/images/pineapple.jpg",
+//   "assets/images/orange.jpg"
+// ];
 var icon=[Icons.add,Icons.abc_sharp,Icons.access_time_filled_rounded];
 
   @override

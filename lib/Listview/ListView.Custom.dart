@@ -13,15 +13,19 @@ class ListView4 extends StatelessWidget {
     return Scaffold(appBar: AppBar(title: Text("ListView 4"),),
       body: ListView.custom(
         ///Way 1
-         // childrenDelegate: SliverChildListDelegate([Text("Hello"),Text("helloo"),Text("helloo"),Text("Hellooo")],
-         // )),
+          childrenDelegate: SliverChildListDelegate([Row(
+            children: [
+              Text("Hello"),
+            ],
+          ),Text("helloo"),Text("helloo"),Text("Hellooo")],
+          )),
       ///Way 1.a
        //childrenDelegate: SliverChildListDelegate(List.generate(10, (index) => Text(("Helloo"))),
     //),
         ///Way 2
-        childrenDelegate: SliverChildBuilderDelegate(childCount: 15,(context,index)=>
-        Center(child: Text("Helloo"))),
-    )
+        //childrenDelegate: SliverChildBuilderDelegate(childCount: 15,(context,index)=>
+        //Center(child: Text("Helloo"))),
+    //)
     );
   }
 }

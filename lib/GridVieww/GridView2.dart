@@ -26,8 +26,8 @@ class GridView2 extends StatelessWidget {
               child: Center(
                   child: Text(
                     "User $index",
-                    style: const TextStyle(fontSize: 20, color: Colors.purple),
-                  )),
+                    style: const TextStyle(fontSize: 20, color: Colors.purple,),
+                  ),),
             );
           }),
     );
