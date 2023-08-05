@@ -26,7 +26,8 @@ class _BottomNavBarState extends State<BottomNavBar> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: Text("BottomNavBar"),),
+      appBar: AppBar(title: Text("BottomNavBar"),
+      ),
       bottomNavigationBar:BottomNavigationBar(
         onTap: (tapindex){
           setState(() {
