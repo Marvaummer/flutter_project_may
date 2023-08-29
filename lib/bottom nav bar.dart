@@ -41,7 +41,7 @@ class _BottomNavBarState extends State<BottomNavBar> {
           type: BottomNavigationBarType.shifting ,//slideshow
           items: const[
         BottomNavigationBarItem(
-      backgroundColor: Colors.green,//applicable for bottom navigateion bar type shifting
+      backgroundColor: Colors.green,//applicable for bottom navigation bar type shifting
       icon: Icon(Icons.contacts_sharp),
           label:"Contact"),
         BottomNavigationBarItem(

@@ -11,6 +11,7 @@ class SharedHome extends StatefulWidget {
 class _SharedHomeState extends State<SharedHome> {
   late SharedPreferences preferences;
   late String username;
+  late  int phone;
 
   @override
   void initState() {
@@ -22,6 +23,7 @@ class _SharedHomeState extends State<SharedHome> {
     preferences = await SharedPreferences.getInstance();
     setState(() {
       username = preferences.getString('uname')!;
+
     });
   }
   @override
@@ -36,10 +38,13 @@ class _SharedHomeState extends State<SharedHome> {
           children: [
             Text(
               "Welcome $username",
+
               style: const TextStyle(fontSize: 30),
             ),
+            Text("my number is $phone"),
             ElevatedButton(onPressed: () {
               preferences.setBool('newuser', true);
+              preferences.setBool("phonenumber", true);
               Navigator.of(context).push(MaterialPageRoute(builder: (context)=>LoginPageShared()));
             }, child: Text("Log Out")),
           ],
