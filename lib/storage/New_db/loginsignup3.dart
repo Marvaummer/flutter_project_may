@@ -23,15 +23,15 @@ class _Login_Signup3State extends State<Login_Signup3> {
           children: [
             const Padding(
               padding: EdgeInsets.only(top: 80.0),
-              child: Text("Hello There!",style: TextStyle(fontSize: 40,fontWeight: FontWeight.bold),),
+              child: Text("Hello There!",style: TextStyle(fontSize: 40,color:Colors.purple,fontWeight: FontWeight.bold),),
             ),
             const Padding(
 
               padding: EdgeInsets.all(25.0),
               child: Text(
-                "Automatic identity verification which enable you to verify your identity",textAlign: TextAlign.center,style: TextStyle(color: Colors.grey),),
+                "Automatic identity verification which enable you to verify your identity",textAlign: TextAlign.center,style: TextStyle(color: Colors.black),),
             ),
-            Image.network('https://t3.ftcdn.net/jpg/03/39/70/90/360_F_339709048_ZITR4wrVsOXCKdjHncdtabSNWpIhiaR7.jpg'),
+            Image.network('https://img.freepik.com/free-vector/sign-up-concept-illustration_114360-7875.jpg?w=740&t=st=1693665218~exp=1693665818~hmac=055cc52616af4c1f0afd50da2d4181f60b5665936655df11384a7b880d5d809a'),
 
 
             Padding(
@@ -42,7 +42,7 @@ class _Login_Signup3State extends State<Login_Signup3> {
                     minimumSize: MaterialStateProperty.all(Size(330, 50)),
                     shape: MaterialStateProperty.all<RoundedRectangleBorder>(
                       RoundedRectangleBorder(
-                        borderRadius: BorderRadius.circular(30.0),
+                        borderRadius: BorderRadius.circular(10.0),
                       ),
                     ),
                   ),
@@ -57,7 +57,7 @@ class _Login_Signup3State extends State<Login_Signup3> {
                     minimumSize: MaterialStateProperty.all(Size(330, 50)),
                     shape: MaterialStateProperty.all<RoundedRectangleBorder>(
                         RoundedRectangleBorder(
-                          borderRadius: BorderRadius.circular(30.0),
+                          borderRadius: BorderRadius.circular(10.0),
 
                         )
                     )

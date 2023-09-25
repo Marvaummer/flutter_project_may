@@ -48,8 +48,8 @@ class _Login3State extends State<Login3> {
   Widget build(BuildContext context) {
     bool hidepass = true;
     return Scaffold(
-      appBar: AppBar(
-        title: const Text("LOGIN PAGE"),
+      appBar: AppBar(backgroundColor: Colors.black38,
+        title: Text("LOGIN PAGE",),
       ),
       body: Form(
         key: formkey,
@@ -60,7 +60,7 @@ class _Login3State extends State<Login3> {
                   padding: EdgeInsets.only(top: 20.0),
                   child: Text(
                     "Login Page",
-                    style: TextStyle(fontSize: 30, fontWeight: FontWeight.bold),
+                    style: TextStyle(color:Colors.red,fontSize: 30, fontWeight: FontWeight.bold),
                   ),
                 )),
             Padding(

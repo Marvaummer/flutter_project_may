@@ -4,6 +4,9 @@ import 'package:flutter_project_may/storage/New_db/SQLHelper3.dart';
 import 'package:flutter_project_may/storage/New_db/login3.dart';
 
 import '../database.dart';
+void main(){
+  runApp(Signup_Form3());
+}
 
 class Signup_Form3 extends StatelessWidget {
   var formkey1 = GlobalKey<FormState>();
